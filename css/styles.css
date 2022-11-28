@@ -382,7 +382,7 @@ img {
     
 
     border-radius: 50%;
-    outline: 1px solid black;
+    /* outline: 1px solid black; */
 }
 
 .teammate-link:hover,
