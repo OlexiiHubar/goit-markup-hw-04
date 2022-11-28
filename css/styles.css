@@ -24,6 +24,11 @@
                             0px 1px 2px rgba(0, 0, 0, 0.08),
                             0px 2px 2px rgba(0, 0, 0, 0.12);
     --clients-border-color: #afb1b8;
+    --background-footer-link: rgba(255, 255, 255, 0.1);
+    --project-shadow-color: 0px 1px 1px rgba(0, 0, 0, 0.12),
+                            0px 4px 4px rgba(0, 0, 0, 0.06),
+                            1px 4px 6px rgba(0, 0, 0, 0.16);
+    --project-border-color: #eeeeee;
 }
 .list {
     list-style: none;
@@ -194,7 +199,7 @@ img {
     padding: 200px 0;
 
     text-align: center;
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/img14.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Img14.jpg);
     background-color: var(--hero-bcg-color);
     background-repeat: no-repeat;
     background-position: center;  
@@ -344,7 +349,7 @@ img {
 }
 
 .teammate-pos {
-    padding-bottom: 30px;
+    margin-bottom: 30px;
 
     font-weight: 400;
     color: var(--add-text-color);
@@ -368,7 +373,7 @@ img {
     margin-right: 10px;
 }
 
-.teammate-link {
+.social-link {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -377,10 +382,11 @@ img {
     
 
     border-radius: 50%;
+    outline: 1px solid black;
 }
 
 .teammate-link:hover,
-.teammate-link:focus{
+.teammate-link:focus {
     color: var(--white-color);
     background-color: var(--accent);
 }
@@ -496,22 +502,32 @@ img {
 }
 
 .adress-container {
-    margin-right: 50px;
+    margin-right: 70px;
 }
 
 .footer-title {
     margin-bottom: 20px;
-    text-align: center;
 
+
+    font-weight: 700;
     font-size: 14px;
     line-height: 1.17;
     color: white;
 }
 
+.footer-list {
+    padding-bottom: 0;
+}
+
 .footer-link {
     color: var(--white-color);
-    background-color: rgba(255, 255, 255, 0.1);;
+    background-color: var(--background-footer-link);
 }
+
+.footer-link:hover {
+    background-color: var(--accent);
+}
+
 
 .footer-icon {
     fill: currentColor;
@@ -570,9 +586,7 @@ img {
 }
 
 .project-link:hover {
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
-                0px 4px 4px rgba(0, 0, 0, 0.06),
-                1px 4px 6px rgba(0, 0, 0, 0.16);
+    box-shadow: var(--project-shadow-color);
 } 
 
 .project-list .project-item {
@@ -608,8 +622,8 @@ img {
 
 .card-content {
     padding: 20px 24px;
-    border-bottom: 1px solid #EEEEEE;
-    border-right: 1px solid #EEEEEE;
-    border-left: 1px solid #EEEEEE;
+    border-bottom: 1px solid var(--project-border-color);
+    border-right: 1px solid var(--project-border-color);
+    border-left: 1px solid var(--project-border-color);
 }
 
